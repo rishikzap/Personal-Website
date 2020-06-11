@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="author" content="Rishik Zaparde" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description" content="Hi, I'm Rishik! Find out more about me." />
+    <meta name="keywords" content="Rishik, Zaparde, Rishik Zaparde" />
+    <meta name="robots" content="nofollow" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <!--Bootstrap CSS file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a1c7659691.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                $('html, body').animate({
+            scrollTop: $(hash).offset().top
+                }, 1500, function(){
+    
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <title>Rishik Zaparde</title>
+</head>
+<body>
+    <div id="container-element" class="container-fluid">
+        <div id="intro-start" class="row align-items-center">
+            <div class="col-md-6 no-padding">
+                <div class="row"> 
+                    <div class="col-md-12">
+                        <h1 id="intro" class="display-4 text-center">Hi, I'm Rishik</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="https://www.linkedin.com/in/rishik-zaparde/" target="_blank" style="text-decoration: none;">
+                            <i class="fab fa-linkedin fa-2x"></i>&nbsp;&nbsp;
+                        </a>
+                        <a href="https://github.com/rishikzap" target="_blank" style="text-decoration: none;">
+                            <i class="fab fa-github-square fa-2x"></i>&nbsp;&nbsp;
+                        </a>
+                         <a href="mailto:rz293@cornell.edu" style="text-decoration: none;">
+                            <i class="fas fa-envelope-square fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p id="more-about" class="text-center">
+                             <a class="link" href="#education" style="text-decoration:none">Find out more about me 
+                                <i class="far fa-caret-square-down fa-sm"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <img src="images/me.jpg" class="img-fluid" alt="me"/>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 no-padding"> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 id="education" class="text-center">
+                            <i class="fas fa-graduation-cap"></i>&nbsp;Education
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="cornell-info" class="text-center">
+                            Cornell University<br />Computer Science<br />2019-2022<br />
+                        </p>
+                        <p id="cornell-info-2" class="text-align-left">I transferred to Cornell in the fall of 2019 after spending a year at UCLA. I'm currently pursuing a BA in Computer Science as a sophomore.
+                            Here, I'm involved with <a class="link" href="https://cornellblockchain.org" target="_blank">Cornell Blockchain</a>, <a href="http://aguaclara.cornell.edu" target="_blank">AguaClara Cornell</a>,
+                            <a href="https://acsu.cornell.edu" target="_blank">ACSU</a>, and the <a href="https://sites.coecis.cornell.edu/makerclub/" target="_blank">Cornell Maker Club</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="ucla-info" class="text-center">
+                            University of California, Los Angeles<br />Linguistics & Computer Science<br />2018-2019
+                        </p>
+                        <p id="ucla-info-2" class="text-align-left">I attended UCLA for my freshman year. At the time, I was pursuing a BA in Linguistics & Computer Science, with the intention
+                            of specializing in <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">natural language processing</a>. Here, I was involved with
+                            <a href="https://www.blockchainatucla.com" target="_blank">Blockchain at UCLA</a> and the <a href="http://bruinlinguists.blogspot.com" target="_blank">Bruin Linguists Society</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                         <a href="#blockchain">
+                             <i class="fas fa-angle-down fa-2x down-icon"></i>
+                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <img src="images/cornell.jpg" class="img-fluid" alt="cornell"/>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 no-padding">
+                <div class="row"> 
+                    <div class="col-md-12">
+                        <h1 id="blockchain" class="text-center"><i class="fas fa-cubes"></i>&nbsp;Blockchain</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="blockchain-info" class="text-align-left">
+                                I became interested in <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank">blockchain</a> after coming across the 
+                                <a href="https://bitcoin.org/bitcoin.pdf" target="_blank">Bitcoin whitepaper</a> in 2018. Since then, I've been 
+                                keeping up with developments in the space and plan on focusing my career on helping to advance this technology.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="blockchain-info-2" class="text-align-left">
+                            I've been working on the side with a blockchain startup named <a href="https://angel.co/company/adventurecorporation" target="_blank">
+                            Adventure Corporation</a>, which is researching blockchain-related technologies to explore the future of the web. In particular, I was
+                            tasked with looking into <a href="http://erc721.org" target="_blank">ERC-721</a>, a new token standard on the <a href="https://ethereum.org" target="_blank">
+                            Ethereum blockchain</a> that would allow developers to create and trade unique, collectible tokens on the network, as in the case of 
+                            <a href="https://www.cryptokitties.co" target="_blank">Crypto Kitties</a>. 
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-12">
+                            <p id="blockchain-info-3" class="text-align-left">
+                                To immerse myself into the field, I have become a tech team developer in the research and development branch of my university's blockchain
+                                organization, <a class="link" href="https://cornellblockchain.org" target="_blank">Cornell Blockchain</a>. Here, I help educate my peers
+                                and <a href="https://github.com/CornellBlockchain" target="_blank">research</a> the latest technical developments in blockchain.
+                            </p>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="#projects">
+                            <i class="fas fa-angle-down fa-2x down-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <img src="images/blockchain-graphic.jpg" class="img-fluid" alt="how blockchain works"/>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 no-padding">
+                <div class="row"> 
+                    <div class="col-md-12">
+                        <h1 id="projects" class="text-center"><i class="fas fa-laptop-code"></i>&nbsp;Projects</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="website-info" class="text-center">
+                            Personal Website
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img id="bootstrap-image" src="images/bootstrap-logo.png" alt="bootstrap framework" style="float: left;"/>
+                        <div id="website-info-2">
+                            <p class="text-align-left">
+                                I built this website using the <a href="https://getbootstrap.com" target="_blank">Bootstrap 4 framework</a> with a 
+                                <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsive design</a> that can adjust to different screen sizes
+                                on various phones, tablets, laptops, and desktops. The layout switches between one and two columns and adjusts font sizes based on the size of the screen.
+                                The code can be found <a href="https://github.com/rishikzap/my_site" target="_blank">here</a>.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="#intro-start" style="text-decoration: none;">
+                                <i class="fas fa-angle-up fa-2x"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-6 no-padding">
+                <img src="images/website-code.png" class="img-fluid" alt="website code"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

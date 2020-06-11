@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Averta;
+    src: url(Averta/averta-webfont.ttf);
+}
+
+/* Responsive Font-Sizing */
+
+@media screen and (min-width: 1141px) {
+    #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
+        font-size: 1.063em;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media screen and (min-width: 769px)  and (max-width: 1140px) {
+    #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
+        font-size: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
+        font-size: 0.8em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (min-width: 1141px) {
+    #blockchain-info, #blockchain-info-2, #blockchain-info-3 {
+        padding-top: 2em;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 769px)  and (max-width: 1140px) {
+    #blockchain-info, #blockchain-info-2, #blockchain-info-3 {
+        padding-top: 1em;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #blockchain-info, #blockchain-info-2, #blockchain-info-3 {
+        padding-top: 0.7em;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1141px) {
+    #blockchain, #education, #projects {
+        font-size: 3em;
+        padding-top: 0.5em;
+    }
+}
+
+@media screen and (min-width: 769px)  and (max-width: 1140px) {
+    #blockchain, #education, #projects {
+        font-size: 1.9em;
+        padding-top: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #blockchain, #education, #projects {
+        font-size: 1.75em;
+        padding-top: 0.5em;
+    }
+}
+
+@media screen and (min-width: 1141px) {
+    #cornell-info, #ucla-info, #website-info {
+        font-size: 1.5em;
+        padding-top: .75em;
+    }
+}
+
+@media screen and (min-width: 769px)  and (max-width: 1140px) {
+    #cornell-info, #ucla-info, #website-info {
+        font-size: 1.2em;
+        padding-top: .75em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cornell-info, #ucla-info, #website-info {
+        font-size: 1em;
+        padding-top: .5em;
+    }
+}
+
+@media screen and (min-width: 1141px) {
+    .down-icon {
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+}
+
+@media screen and (min-width: 769px)  and (max-width: 1140) {
+    .down-icon {
+        padding-top: 0.8em;
+        padding-bottom: 0.3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .down-icon {
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #bootstrap-image{
+        max-width: 33%;
+        max-height: auto;
+        margin-right: 1em;
+        margin-left: 0em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #bootstrap-image{
+        max-width: 25%;
+        max-height: auto;
+        margin-right: 0.5em;
+        margin-left: 0em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #intro {
+        letter-spacing: .03em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #intro {
+        letter-spacing: .01em;
+    }
+}
+
+body {
+    font-family: Averta;
+    background-image: linear-gradient(to left top, #dd8927, #dd8225, #dd7b23, #dd7422, #dd6d22, #df7226, #e27629, #e47b2d, #ea8c37, #f09d43, #f5ae51, #fbbe5f);
+    color: rgb(22, 14, 14);
+}
+
+h1 {
+    letter-spacing: .02em;
+    padding-bottom: 0.2em;
+}
+
+#intro {
+    font-size: 3em;
+    padding-top: 0.5em;
+}
+
+a:link {
+    color:rgb(22, 14, 14);
+    text-decoration: underline;
+}
+
+a:visited  {
+    color:rgb(22, 14, 14);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(80, 81, 74);
+    text-decoration: underline;
+}
+
+a:active {
+    color:rgb(22, 14, 14);
+    text-decoration: none;
+}
+
+#more-about, #email {
+    font-size: 1.25em;
+    letter-spacing: .01em;
+    padding-top: 1em;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+#bootstrap-image {
+    padding-left: 0em;
+    padding-top: 0.3em;
+}
+
+#container-element {
+    padding: 0 !important;
+}
+
+.row{
+    margin: 0 !important;
+    padding-right: -15px !important;
+    padding-left: -15px !important;
+    width: 100%;
+}
+
