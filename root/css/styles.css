@@ -128,6 +128,7 @@
         max-height: auto;
         margin-right: 0.5em;
         margin-left: 0em;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -143,15 +144,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .fullscreen {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
 
 body {
     font-family: Averta;
@@ -217,5 +209,22 @@ a:active {
     padding-right: -15px !important;
     padding-left: -15px !important;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .fullscreen {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    #intro {
+        padding-top: 0;
+    }
+    #more-about {
+        margin-bottom: 0;
+    }
 }
 
