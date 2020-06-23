@@ -93,23 +93,23 @@
 }
 
 @media screen and (min-width: 1141px) {
-    .down-icon {
+    .down-icon, .fa-angle-up {
         padding-top: 1em;
         padding-bottom: 0.5em;
     }
 }
 
 @media screen and (min-width: 769px)  and (max-width: 1140) {
-    .down-icon {
+    .down-icon, .fa-angle-up {
         padding-top: 0.8em;
         padding-bottom: 0.3em;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .down-icon {
+    .down-icon, .fa-angle-up {
         padding-top: 0.5em;
-        padding-bottom: 0.2em;
+        padding-bottom: 0.4em;
     }
 }
 
@@ -187,6 +187,10 @@ a:active {
 
 .no-padding {
     padding: 0;
+}
+
+.built {
+    margin: 0;
 }
 
 #bootstrap-image {
