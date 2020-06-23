@@ -143,6 +143,16 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .fullscreen {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 body {
     font-family: Averta;
     background-image: linear-gradient(to left top, #dd8927, #dd8225, #dd7b23, #dd7422, #dd6d22, #df7226, #e27629, #e47b2d, #ea8c37, #f09d43, #f5ae51, #fbbe5f);
