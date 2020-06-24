@@ -220,6 +220,9 @@ a:active {
         justify-content: center;
         padding: 0;
         position: relative;
+    }
+    .intro-raise
+    {
         bottom: 10vh;
     }
     #intro {
