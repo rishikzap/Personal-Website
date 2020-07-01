@@ -5,145 +5,131 @@
 
 /* Responsive Font-Sizing */
 
-@media screen and (min-width: 1141px) {
-    #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
-        font-size: 1.063em;
-        padding-left: 3em;
-        padding-right: 3em;
-    }
+html { font-size: 2vw; }
+
+#cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
+    font-size: 0.8em;
+    line-height: 1.6em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
-@media screen and (min-width: 769px)  and (max-width: 1140px) {
-    #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
-        font-size: 1em;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+#blockchain-info, #blockchain-info-2, #blockchain-info-3 {
+    padding-top: 1em;
+    margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+#blockchain, #education, #projects {
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+
+#blockchain {
+    margin: 0;
+}
+
+#cornell-info, #ucla-info, #website-info {
+    font-size: 1em;
+    padding-top: 0.5em;
+}
+
+.down-icon, .fa-angle-up {
+    padding-top: 0.2em;
+}
+
+#intro {
+    font-size: 2em;
+    letter-spacing: .03em;
+}
+
+#more-about {
+    font-size: 1em;
+    letter-spacing: .01em;
+    padding-top: 0.7em;
+}
+
+.intro-raise
+{
+    position: relative;
+    bottom: 0.5em;
+}
+
+#bootstrap-image{
+    max-width: 33%;
+    max-height: auto;
+    margin-right: 0.5em;
+    margin-left: 2em;
+    padding: 0;
+}
+
+@media screen and (max-width: 766px) {
+    html { font-size: 2.5vh; }
+
     #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
-        font-size: 1em;
+        font-size: 0.8em;
+        line-height: 1.6em;
         padding-left: 1em;
         padding-right: 1em;
     }
-}
-
-@media screen and (min-width: 1141px) {
-    #blockchain-info, #blockchain-info-2, #blockchain-info-3 {
-        padding-top: 2em;
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 769px)  and (max-width: 1140px) {
+    
     #blockchain-info, #blockchain-info-2, #blockchain-info-3 {
         padding-top: 1em;
         margin: 0;
     }
-}
-
-@media screen and (max-width: 768px) {
-    #blockchain-info, #blockchain-info-2, #blockchain-info-3 {
-        padding-top: 0.7em;
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 1141px) {
-    #blockchain, #education, #projects {
-        font-size: 3em;
-        padding-top: 0.5em;
-    }
-}
-
-@media screen and (min-width: 769px)  and (max-width: 1140px) {
-    #blockchain, #education, #projects {
-        font-size: 1.9em;
-        padding-top: 0.5em;
-    }
-}
-
-@media screen and (max-width: 768px) {
+    
     #blockchain, #education, #projects {
         font-size: 2em;
         padding-top: 0.5em;
     }
-}
-
-@media screen and (min-width: 1141px) {
+    
+    #blockchain {
+        margin: 0;
+    }
+    
     #cornell-info, #ucla-info, #website-info {
-        font-size: 1.5em;
-        padding-top: .75em;
+        font-size: 1em;
+        padding-top: 0.75em;
     }
-}
-
-@media screen and (min-width: 769px)  and (max-width: 1140px) {
-    #cornell-info, #ucla-info, #website-info {
-        font-size: 1.2em;
-        padding-top: .75em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #cornell-info, #ucla-info, #website-info {
-        font-size: 1.2em;
-        padding-top: .5em;
-    }
-}
-
-@media screen and (min-width: 1141px) {
-    .down-icon, .fa-angle-up {
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-    }
-}
-
-@media screen and (min-width: 769px)  and (max-width: 1140) {
-    .down-icon, .fa-angle-up {
-        padding-top: 0.8em;
-        padding-bottom: 0.3em;
-    }
-}
-
-@media screen and (max-width: 768px) {
+    
     .down-icon, .fa-angle-up {
         padding-top: 0.5em;
-        padding-bottom: 0.4em;
     }
-}
-
-@media screen and (min-width: 769px) {
+    
+    #intro {
+        font-size: 2em;
+        letter-spacing: .03em;
+    }
+    
+    #more-about {
+        font-size: 1em;
+        letter-spacing: .01em;
+        padding-top: 0.7em;
+    }
+    
+    .intro-raise
+    {
+        position: relative;
+        bottom: 1em;
+    }
+    
     #bootstrap-image{
         max-width: 33%;
         max-height: auto;
-        margin-right: 1em;
-        margin-left: 0em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #bootstrap-image{
-        max-width: 40%;
-        max-height: auto;
         margin-right: 0.5em;
-        margin-left: 0em;
-        margin-bottom: 0.5em;
+        margin-left: 0.75em;
+        padding: 0;
+    }
+    
+    .fullscreen {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        position: relative;
     }
 }
-
-@media screen and (min-width: 769px) {
-    #intro {
-        letter-spacing: .03em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #intro {
-        letter-spacing: .01em;
-    }
-}
-
 
 body {
     font-family: Averta;
@@ -154,11 +140,6 @@ body {
 h1 {
     letter-spacing: .02em;
     padding-bottom: 0.2em;
-}
-
-#intro {
-    font-size: 3em;
-    padding-top: 0.5em;
 }
 
 a:link {
@@ -181,23 +162,12 @@ a:active {
     text-decoration: none;
 }
 
-#more-about, #email {
-    font-size: 1.25em;
-    letter-spacing: .01em;
-    padding-top: 1em;
-}
-
 .no-padding {
     padding: 0;
 }
 
 .built {
     margin: 0;
-}
-
-#bootstrap-image {
-    padding-left: 0em;
-    padding-top: 0.3em;
 }
 
 #container-element {
@@ -209,27 +179,5 @@ a:active {
     padding-right: -15px !important;
     padding-left: -15px !important;
     width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .fullscreen {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        position: relative;
-    }
-    .intro-raise
-    {
-        bottom: 10vh;
-    }
-    #intro {
-        padding-top: 0;
-    }
-    #more-about {
-        margin-bottom: 0;
-    }
 }
 
