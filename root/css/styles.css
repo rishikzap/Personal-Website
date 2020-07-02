@@ -39,6 +39,11 @@ html { font-size: 2vw; }
 #cornell-info, #ucla-info, #website-info, #project-one-title, #project-two-title {
     font-size: 1em;
     padding-top: 0.5em;
+    font-weight: bold;
+}
+
+#project-one-title, #project-two-title {
+    padding-top: 1em;
 }
 
 .down-icon, .fa-angle-up {
@@ -82,7 +87,7 @@ html { font-size: 2vw; }
     }
 
     #project-one-info {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     #project-two-info {
@@ -90,7 +95,7 @@ html { font-size: 2vw; }
     }
     
     #blockchain-info {
-        padding-top: 1em;
+        padding-top: 0.5em;
         margin: 0;
     }
     
@@ -106,10 +111,12 @@ html { font-size: 2vw; }
     #cornell-info, #ucla-info, #website-info {
         font-size: 1em;
         padding-top: 0.75em;
+        font-weight: bold;
     }
 
     #project-one-title, #project-two-title {
-        padding-top: 0.5em;
+        padding-top: 1em;
+        font-weight: bold;
     }
     
     .down-icon, .fa-angle-up {
