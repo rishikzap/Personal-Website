@@ -7,15 +7,23 @@
 
 html { font-size: 2vw; }
 
-#cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
+#cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2, #project-one-info,  #project-two-info, #extra-projects{
     font-size: 0.8em;
     line-height: 1.6em;
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
 
-#blockchain-info, #blockchain-info-2, #blockchain-info-3 {
-    padding-top: 1em;
+#project-one-info {
+    margin: 0;
+}
+
+#project-two-info {
+    margin-bottom: 0;
+}
+
+#blockchain-info{
+    padding-top: 0.5em;
     margin: 0;
 }
 
@@ -28,13 +36,13 @@ html { font-size: 2vw; }
     margin: 0;
 }
 
-#cornell-info, #ucla-info, #website-info {
+#cornell-info, #ucla-info, #website-info, #project-one-title, #project-two-title {
     font-size: 1em;
     padding-top: 0.5em;
 }
 
 .down-icon, .fa-angle-up {
-    padding-top: 0.2em;
+    padding-top: 0.5em;
 }
 
 #intro {
@@ -54,25 +62,34 @@ html { font-size: 2vw; }
     bottom: 0.5em;
 }
 
-#bootstrap-image{
-    max-width: 33%;
+.float-image {
+    max-width: 25%;
     max-height: auto;
     margin-right: 0.5em;
     margin-left: 2em;
     padding: 0;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 766px) {
     html { font-size: 2.5vh; }
 
-    #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2 {
+    #cornell-info-2, #ucla-info-2, #blockchain-info, #blockchain-info-2, #blockchain-info-3, #website-info-2, #project-one-info,  #project-two-info, #extra-projects {
         font-size: 0.8em;
         line-height: 1.6em;
         padding-left: 1em;
         padding-right: 1em;
     }
+
+    #project-one-info {
+        margin-bottom: 1rem;
+    }
+
+    #project-two-info {
+        margin-bottom: 0;
+    }
     
-    #blockchain-info, #blockchain-info-2, #blockchain-info-3 {
+    #blockchain-info {
         padding-top: 1em;
         margin: 0;
     }
@@ -89,6 +106,10 @@ html { font-size: 2vw; }
     #cornell-info, #ucla-info, #website-info {
         font-size: 1em;
         padding-top: 0.75em;
+    }
+
+    #project-one-title, #project-two-title {
+        padding-top: 0.5em;
     }
     
     .down-icon, .fa-angle-up {
@@ -109,15 +130,16 @@ html { font-size: 2vw; }
     .intro-raise
     {
         position: relative;
-        bottom: 1em;
+        bottom: 4.5em;
     }
     
-    #bootstrap-image{
+    .float-image {
         max-width: 33%;
         max-height: auto;
         margin-right: 0.5em;
         margin-left: 0.75em;
         padding: 0;
+        border-radius: 10px;
     }
     
     .fullscreen {
@@ -133,6 +155,7 @@ html { font-size: 2vw; }
 
 body {
     font-family: Averta;
+    color: rgb(22, 14, 14);
     background-image: linear-gradient(to left top, #dd8927, #dd8225, #dd7b23, #dd7422, #dd6d22, #df7226, #e27629, #e47b2d, #ea8c37, #f09d43, #f5ae51, #fbbe5f);
     color: rgb(22, 14, 14);
 }
