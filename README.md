@@ -1,1 +1,1 @@
-You can find this project at: http://rishikzaparde.me
+You can find this project at: https://rishikzaparde.me
