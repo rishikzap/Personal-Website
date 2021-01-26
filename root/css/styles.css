@@ -11,17 +11,18 @@ html {
 
 #cornell-info-2,
 #ucla-info-2,
-#blockchain-info,
 #blockchain-info-2,
 #blockchain-info-3,
 #website-info-2,
 #project-one-info,
 #project-two-info,
 #extra-projects {
-  font-size: 0.8em;
+  font-size: 0.6em;
   line-height: 1.7em;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+}
+
+#blockchain-info {
+  font-size: 0.8em;
 }
 
 #project-one-info {
@@ -41,7 +42,7 @@ html {
 #education,
 #projects {
   font-size: 2em;
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
 }
 
 #blockchain {
@@ -103,10 +104,8 @@ html {
   #project-one-info,
   #project-two-info,
   #extra-projects {
-    font-size: 0.8em;
+    font-size: 0.6em;
     line-height: 1.6em;
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
   #project-one-info {
@@ -192,9 +191,9 @@ html {
 
 body {
   font-family: Averta;
-  background-color: rgb(216, 220, 238);
+  background-color: #545f63;
   /*background-image: linear-gradient(to left top, #dd8927, #dd8225, #dd7b23, #dd7422, #dd6d22, #df7226, #e27629, #e47b2d, #ea8c37, #f09d43, #f5ae51, #fbbe5f);*/
-  color: rgb(22, 14, 14);
+  color: white;
 }
 
 h1 {
@@ -203,17 +202,17 @@ h1 {
 }
 
 a:link {
-  color: rgb(22, 14, 14);
+  color: white;
   text-decoration: underline;
 }
 
 a:visited {
-  color: rgb(22, 14, 14);
+  color: white;
   text-decoration: underline;
 }
 
 a:hover {
-  color: rgb(80, 81, 74);
+  color: #dee1e3;
   text-decoration: underline;
 }
 
@@ -243,4 +242,51 @@ a:active {
 
 #cornell-info-2 {
   margin-bottom: 0;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, -13px);
+  }
+  50% {
+    transform: translate(0, 13px);
+  }
+  100% {
+    transform: translate(0, -13px);
+  }
+}
+
+.card-img {
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  border-style: none;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mb-3 {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.card-title {
+  font-size: 1em;
 }
