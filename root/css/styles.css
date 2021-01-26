@@ -97,15 +97,18 @@ html {
 
   #cornell-info-2,
   #ucla-info-2,
-  #blockchain-info,
   #blockchain-info-2,
   #blockchain-info-3,
   #website-info-2,
   #project-one-info,
   #project-two-info,
   #extra-projects {
-    font-size: 0.6em;
+    font-size: 0.73em;
     line-height: 1.6em;
+  }
+
+  #blockchain-info {
+    font-size: 0.9em;
   }
 
   #project-one-info {
