@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Averta;
-  src: url(Averta/averta-webfont.ttf);
-}
-
 /* Responsive Font-Sizing */
 
 html {
@@ -193,8 +188,8 @@ html {
 }
 
 body {
-  font-family: Averta;
-  background-color: #545f63;
+  font-family: "Inter", sans-serif;
+  background-color: #0077b6;
   /*background-image: linear-gradient(to left top, #dd8927, #dd8225, #dd7b23, #dd7422, #dd6d22, #df7226, #e27629, #e47b2d, #ea8c37, #f09d43, #f5ae51, #fbbe5f);*/
   color: white;
 }
@@ -279,6 +274,7 @@ a:active {
   border-radius: 25px;
   border-style: none;
   transition: 0.3s;
+  background-color: #184e77 !important;
 }
 
 .card:hover {

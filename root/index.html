@@ -1,257 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="author" content="Rishik Zaparde" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="description" content="Hi, I'm Rishik! Find out more about me." />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
+      name="description"
+      content="Hi, I'm Rishik! Find out more about me."
+    />
     <meta name="keywords" content="Rishik, Zaparde, Rishik Zaparde" />
     <meta name="robots" content="nofollow" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon_io/site.webmanifest">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon_io/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
     <!--Bootstrap CSS file-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/a1c7659691.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a1c7659691.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+      $(document).ready(function () {
         // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-            // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+            // Store hash
+            var hash = this.hash;
 
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                $('html, body').animate({
-            scrollTop: $(hash).offset().top
-                }, 1500, function(){
-    
+            // Using jQuery's animate() method to add smooth page scroll
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1500,
+              function () {
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
-                    });
-                } // End if
-            });
+              }
+            );
+          } // End if
         });
+      });
     </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <title>Rishik Zaparde</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container-element" class="container-fluid">
-        <div id="intro-start" class="row align-items-center">
-            <div class="col-md-6 no-padding fullscreen intro-raise">
-                <div class="row"> 
-                    <div class="col-md-12">
-                        <h1 id="intro" class="display-4 text-center floating">
-                            Hi, I'm Rishik
-                        </h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center floating">
-                        <a href="https://www.linkedin.com/in/rishik-zaparde/" target="_blank" style="text-decoration: none;">
-                            <i class="fab fa-linkedin fa-lg"></i></a>
-                        <span>&nbsp;&nbsp;</span>
-                        <a href="https://github.com/rishikzap" target="_blank" style="text-decoration: none;">
-                            <i class="fab fa-github-square fa-lg"></i></a>
-                        <span>&nbsp;&nbsp;</span>
-                         <a href="mailto:rz293@cornell.edu" style="text-decoration: none;">
-                            <i class="fas fa-envelope-square fa-lg"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p id="more-about" class="text-center animate__animated animate__fadeInLeft floating">
-                             <a class="link" href="#education" style="text-decoration:none">Find out more about me 
-                                <i class="far fa-caret-square-down fa-sm"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
+      <div id="intro-start" class="row align-items-center">
+        <div class="col-md-6 no-padding fullscreen intro-raise">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 id="intro" class="display-4 text-center floating">
+                Hi, I'm Rishik
+              </h1>
             </div>
-            <div class="col-md-6 no-padding">
-                <img src="images/me.jpg" class="img-fluid" alt="me"/>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center floating">
+              <a
+                href="https://www.linkedin.com/in/rishik-zaparde/"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <span>&nbsp;&nbsp;</span>
+              <a
+                href="https://github.com/rishikzap"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <i class="fab fa-github-square fa-lg"></i
+              ></a>
+              <span>&nbsp;&nbsp;</span>
+              <a href="mailto:rz293@cornell.edu" style="text-decoration: none">
+                <i class="fas fa-envelope-square fa-lg"></i
+              ></a>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p
+                id="more-about"
+                class="text-center animate__animated animate__fadeInLeft floating"
+              >
+                <a class="link" href="#education" style="text-decoration: none"
+                  >Find out more about me
+                  <i class="far fa-caret-square-down fa-sm"></i>
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-md-6 no-padding fullscreen order-sm-1 order-md-2"> 
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 id="education" class="text-center">
-                            <i class="fas fa-graduation-cap"></i>&nbsp;Education
-                        </h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card mb-3 bg-dark text-light">
-                            <div class="row no-gutters">
-                              <div class="col-4">
-                                <img src="images/cornell-logo.png" class="card-img" alt="IMage">
-                              </div>
-                              <div class="col-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Cornell University</h5>
-                                  <p id="cornell-info-2" class="card-text">
-                                    I transferred to Cornell in the fall of 2019 after spending a year at UCLA. I'm currently pursuing a BA in Computer Science as a junior.
-                                    Here, I've been involved with the <a class="link" href="https://thecornellbusinessreview.com" target="_blank"> Cornell Business Review</a>, <a class="link" href="https://cornellblockchain.org" target="_blank">Cornell Blockchain</a>, <a href="http://aguaclara.cornell.edu" target="_blank">AguaClara Cornell</a>,
-                                    <a href="https://acsu.cornell.edu" target="_blank">ACSU</a>, and the <a href="https://sites.coecis.cornell.edu/makerclub/" target="_blank">Cornell Maker Club</a>.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>  
-                          <div class="card mb-3 bg-dark text-light">
-                            <div class="row no-gutters">
-                              <div class="col-4">
-                                <img src="images/ucla-logo.jpg" class="card-img" alt="IMage">
-                              </div>
-                              <div class="col-8">
-                                <div class="card-body">
-                                  <h5 class="card-title"> UCLA</h5>
-                                  <p id="cornell-info-2" class="card-text">
-                                    I attended UCLA for my freshman year. At the time, I was pursuing a BA in Linguistics & Computer Science, with the intention
-                            of specializing in <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">natural language processing</a>. Here, I was involved with
-                            <a href="https://www.blockchainatucla.com" target="_blank">Blockchain at UCLA</a> and the <a href="http://bruinlinguists.blogspot.com" target="_blank">Bruin Linguists Society</a>.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>  
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 no-padding order-sm-2 order-md-1">
-                <img src="images/cornell.jpg" class="img-fluid" alt="cornell"/>
-            </div>
+        <div class="col-md-6 no-padding">
+          <img src="images/me.jpg" class="img-fluid" alt="me" />
         </div>
-        <div class="row align-items-center">
-            <div class="col-md-6 no-padding fullscreen">
-                <div class="row"> 
-                    <div class="col-md-12">
-                        <h1 id="projects" class="text-center"><i class="fas fa-laptop-code"></i>&nbsp;Projects</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card mb-3 bg-dark text-light">
-                            <div class="row no-gutters">
-                              <div class="col-4">
-                                <img src="images/react-logo.png" class="card-img" alt="IMage">
-                              </div>
-                              <div class="col-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">COVID-19 Dashboard</h5>
-                                  <p id="cornell-info-2" class="card-text">
-                                    My team and I built <a href="https://covidhospitaldashboard.com/" target="_blank">this dashboard</a> 
-                                    to display ICU bed capacity and vaccine distribution by state. 
-                                    We used <a href="https://reactjs.org/" target="_blank">React.js</a> and <a href="https://d3js.org/" target="_blank">D3.js</a>
-                                    to display the map data.
-                                    We used <a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank">Flask</a> and 
-                                    <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> to create a database-powered API. 
-                                    The code can be found <a href="https://github.com/rishikzap/Hex-Frontend" target="_blank">here</a>
-                                    and <a href="https://github.com/sunil-2000/backend_icu" target="_blank">here</a>. 
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>  
-                          <div class="card mb-3 bg-dark text-light">
-                            <div class="row no-gutters">
-                              <div class="col-4">
-                                <img src="images/ocaml-logo.png" class="card-img" alt="IMage">
-                              </div>
-                              <div class="col-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Flappy Caml</h5>
-                                  <p id="cornell-info-2" class="card-text">
-                                    My team and I built a <a href="https://en.wikipedia.org/wiki/Flappy_Bird" target="_blank">Flappy Bird</a> 
-                                    clone in <a href="https://ocaml.org/" target="_blank">OCaml</a>. We included features such as: 
-                                    sprite selection, custom animations, a high score tracker, and powerups. Each playthrough of the game
-                                    is randomly generated using game states and state transitions. The code can be found 
-                                    <a href="https://github.com/rishikzap/Flappy-Caml" target="_blank">here</a>. 
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>  
-                    </div>
-                </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 no-padding fullscreen order-sm-1 order-md-2">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 id="education" class="text-center">
+                <i class="fas fa-graduation-cap"></i>&nbsp;Education
+              </h1>
             </div>
-            <div class="col-md-6 no-padding">
-                <img src="images/flappycaml.gif" class="img-fluid" alt="website code"/>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-3 bg-dark text-light">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img
+                      src="images/cornell-logo.png"
+                      class="card-img"
+                      alt="IMage"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Cornell University</h5>
+                      <p id="cornell-info-2" class="card-text">
+                        I transferred to Cornell in the fall of 2019 after
+                        spending a year at UCLA. I'm currently pursuing a BA in
+                        Computer Science as a junior. Here, I've been involved
+                        with the
+                        <a
+                          class="link"
+                          href="https://thecornellbusinessreview.com"
+                          target="_blank"
+                        >
+                          Cornell Business Review</a
+                        >,
+                        <a
+                          class="link"
+                          href="https://cornellblockchain.org"
+                          target="_blank"
+                          >Cornell Blockchain</a
+                        >,
+                        <a href="http://aguaclara.cornell.edu" target="_blank"
+                          >AguaClara Cornell</a
+                        >,
+                        <a href="https://acsu.cornell.edu" target="_blank"
+                          >ACSU</a
+                        >, and the
+                        <a
+                          href="https://sites.coecis.cornell.edu/makerclub/"
+                          target="_blank"
+                          >Cornell Maker Club</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 bg-dark text-light">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img
+                      src="images/ucla-logo.jpg"
+                      class="card-img"
+                      alt="IMage"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title">UCLA</h5>
+                      <p id="cornell-info-2" class="card-text">
+                        I attended UCLA for my freshman year. At the time, I was
+                        pursuing a BA in Linguistics & Computer Science, with
+                        the intention of specializing in
+                        <a
+                          href="https://en.wikipedia.org/wiki/Natural_language_processing"
+                          target="_blank"
+                          >natural language processing</a
+                        >. Here, I was involved with
+                        <a
+                          href="https://www.blockchainatucla.com"
+                          target="_blank"
+                          >Blockchain at UCLA</a
+                        >
+                        and the
+                        <a
+                          href="http://bruinlinguists.blogspot.com"
+                          target="_blank"
+                          >Bruin Linguists Society</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-md-6 no-padding fullscreen order-sm-1 order-md-2">
-                <div class="row"> 
-                    <div class="col-md-12">
-                        <h1 id="blockchain" class="text-center"><i class="fas fa-cubes"></i>&nbsp;Blockchain</h1>
+        <div class="col-md-6 no-padding order-sm-2 order-md-1">
+          <img src="images/cornell.jpg" class="img-fluid" alt="cornell" />
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 no-padding fullscreen">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 id="projects" class="text-center">
+                <i class="fas fa-laptop-code"></i>&nbsp;Projects
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-3 bg-dark text-light">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img
+                      src="images/react-logo.png"
+                      class="card-img"
+                      alt="IMage"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title">COVID-19 Dashboard</h5>
+                      <p id="cornell-info-2" class="card-text">
+                        My team and I built
+                        <a
+                          href="https://covidhospitaldashboard.com/"
+                          target="_blank"
+                          >this dashboard</a
+                        >
+                        to display ICU bed capacity and vaccine distribution by
+                        state. We used
+                        <a href="https://reactjs.org/" target="_blank"
+                          >React.js</a
+                        >
+                        and
+                        <a href="https://d3js.org/" target="_blank">D3.js</a> to
+                        display the map data. We used
+                        <a
+                          href="https://flask.palletsprojects.com/en/1.1.x/"
+                          target="_blank"
+                          >Flask</a
+                        >
+                        and
+                        <a href="https://www.mongodb.com/" target="_blank"
+                          >MongoDB</a
+                        >
+                        to create a database-powered API. The code can be found
+                        <a
+                          href="https://github.com/rishikzap/Hex-Frontend"
+                          target="_blank"
+                          >here</a
+                        >
+                        and
+                        <a
+                          href="https://github.com/sunil-2000/backend_icu"
+                          target="_blank"
+                          >here</a
+                        >.
+                      </p>
                     </div>
+                  </div>
                 </div>
+              </div>
+              <div class="card mb-3 bg-dark text-light">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img
+                      src="images/ocaml-logo.png"
+                      class="card-img"
+                      alt="IMage"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Flappy Caml</h5>
+                      <p id="cornell-info-2" class="card-text">
+                        My team and I built a
+                        <a
+                          href="https://en.wikipedia.org/wiki/Flappy_Bird"
+                          target="_blank"
+                          >Flappy Bird</a
+                        >
+                        clone in
+                        <a href="https://ocaml.org/" target="_blank">OCaml</a>.
+                        We included features such as: sprite selection, custom
+                        animations, a high score tracker, and powerups. Each
+                        playthrough of the game is randomly generated using game
+                        states and state transitions. The code can be found
+                        <a
+                          href="https://github.com/rishikzap/Flappy-Caml"
+                          target="_blank"
+                          >here</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 no-padding">
+          <img
+            src="images/flappycaml.gif"
+            class="img-fluid"
+            alt="website code"
+          />
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 no-padding fullscreen order-sm-1 order-md-2">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 id="blockchain" class="text-center">
+                <i class="fas fa-cubes"></i>&nbsp;Blockchain
+              </h1>
+            </div>
+          </div>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <p id="blockchain-info" class="text-center" style="margin-bottom: 1em;">
-                            Here are a couple projects that I'm following:
-                        </p>
-                        <div class="card mb-3 bg-dark text-light">
-                            <div class="row no-gutters">
-                              <div class="col-4">
-                                <img src="images/polkadot-logo.png" class="card-img" alt="IMage">
-                              </div>
-                              <div class="col-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Polkadot</h5>
-                                  <p id="cornell-info-2" class="card-text">
-                                    <a href="https://polkadot.network/" target="_blank">Polkadot</a> is a blockchain interoperability protocol created by
-                                    the <a href="https://web3.foundation/" target="_blank">Web3 Foundation</a>. It allows disparate blockchains to exchange
-                                    data trustlessly and can secure multiple chains simultaneously with <a href="https://wiki.polkadot.network/docs/en/learn-security" target="_blank">pooled security</a>. You can find out more about 
-                                    how it works <a href="https://polkadot.network/technology/" target="_blank">here</a>.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div> 
-                          <div class="card mb-3 bg-dark text-light">
-                            <div class="row no-gutters">
-                              <div class="col-4">
-                                <img src="images/maker-logo.jpg" class="card-img" alt="IMage">
-                              </div>
-                              <div class="col-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">MakerDAO</h5>
-                                  <p id="cornell-info-2" class="card-text">
-                                    <a href="https://makerdao.com/en/" target="_blank">MakerDAO</a> has created both a cryptocurrency (<a href="https://www.coinbase.com/price/dai" target="_blank">Dai</a>) and a protocol by which Dai can maintain a stable value.
-                                    Unlike other <a href="https://en.wikipedia.org/wiki/Stablecoin" target="_blank">stablecoins</a>, Dai's price volatility is mitigated in a decentralized way. You can find out more about how it works <a href="https://makerdao.com/en/whitepaper" target="_blank">here</a>.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>  
+          <div class="row">
+            <div class="col-md-12">
+              <p
+                id="blockchain-info"
+                class="text-center"
+                style="margin-bottom: 1em"
+              >
+                Here are a couple projects that I'm following:
+              </p>
+              <div class="card mb-3 bg-dark text-light">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img
+                      src="images/polkadot-logo.png"
+                      class="card-img"
+                      alt="IMage"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Polkadot</h5>
+                      <p id="cornell-info-2" class="card-text">
+                        <a href="https://polkadot.network/" target="_blank"
+                          >Polkadot</a
+                        >
+                        is a blockchain interoperability protocol created by the
+                        <a href="https://web3.foundation/" target="_blank"
+                          >Web3 Foundation</a
+                        >. It allows disparate blockchains to exchange data
+                        trustlessly and can secure multiple chains
+                        simultaneously with
+                        <a
+                          href="https://wiki.polkadot.network/docs/en/learn-security"
+                          target="_blank"
+                          >pooled security</a
+                        >. You can find out more about how it works
+                        <a
+                          href="https://polkadot.network/technology/"
+                          target="_blank"
+                          >here</a
+                        >.
+                      </p>
                     </div>
+                  </div>
                 </div>
+              </div>
+              <div class="card mb-3 bg-dark text-light">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img
+                      src="images/maker-logo.jpg"
+                      class="card-img"
+                      alt="IMage"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title">MakerDAO</h5>
+                      <p id="cornell-info-2" class="card-text">
+                        <a href="https://makerdao.com/en/" target="_blank"
+                          >MakerDAO</a
+                        >
+                        has created both a cryptocurrency (<a
+                          href="https://www.coinbase.com/price/dai"
+                          target="_blank"
+                          >Dai</a
+                        >) and a protocol which stabilizes the price of Dai.
+                        Unlike other
+                        <a
+                          href="https://en.wikipedia.org/wiki/Stablecoin"
+                          target="_blank"
+                          >stablecoins</a
+                        >, Dai's price volatility is mitigated in a
+                        decentralized way. You can find out more about how it
+                        works
+                        <a
+                          href="https://makerdao.com/en/whitepaper"
+                          target="_blank"
+                          >here</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div id="blockchain-img" class="col-md-6 no-padding order-sm-2 order-md-1">
-                <img src="images/blockchain-graphic.jpg" class="img-fluid" alt="how blockchain works"/>
-            </div>
+          </div>
         </div>
+        <div
+          id="blockchain-img"
+          class="col-md-6 no-padding order-sm-2 order-md-1"
+        >
+          <img
+            src="images/blockchain-graphic.jpg"
+            class="img-fluid"
+            alt="how blockchain works"
+          />
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-
-
