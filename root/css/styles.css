@@ -85,6 +85,10 @@ html {
   border-radius: 10px;
 }
 
+.carousel-indicators {
+  margin-bottom: -1em;
+}
+
 @media screen and (max-width: 766px) {
   html {
     font-size: 2.5vh;
